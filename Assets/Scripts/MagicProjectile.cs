@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Plate : MonoBehaviour
+public class MagicProjectile : MonoBehaviour
 {
 
     // Start is called before the first frame update
@@ -20,11 +20,11 @@ public class Plate : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         var gameObj = col.gameObject;
-        if(gameObj.tag == "Player" || gameObj.tag == "Window" || gameObj.tag == "Projectile")
+        if(gameObj.tag == "Enemy" || gameObj.tag == "Window" || gameObj.tag == "Projectile")
         {
             return;
         }
-        else if (gameObj.tag == "Enemy")
+        else if (gameObj.tag == "Player")
         {
             var health = gameObj.GetComponent<Health>();
             health.TakeDamage(1f);
