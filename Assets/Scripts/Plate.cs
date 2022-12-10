@@ -19,9 +19,15 @@ public class Plate : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Player" || col.gameObject.tag == "Window")
+        var gameObj = col.gameObject;
+        if(gameObj.tag == "Player" || gameObj.tag == "Window")
         {
             return;
+        }
+        else if (gameObj.tag == "Enemy")
+        {
+            var health = gameObj.GetComponent<Health>();
+            health.TakeDamage(1f);
         }
         Destroy(gameObject);
     }
