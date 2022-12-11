@@ -15,7 +15,7 @@ public class EnemyAttack : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         player = GameObject.FindWithTag("Player");
-        InvokeRepeating("Attack", 2f, attackSpeed);
+        InvokeRepeating("Attack", 3f, attackSpeed);
     }
 
     // Update is called once per frame

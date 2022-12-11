@@ -21,6 +21,13 @@ public class Health : MonoBehaviour
         {
             Die();
         }
+
+        if (gameObject.tag == "Player")
+        {
+            var num = currentHealth + 1;
+            var heart = GameObject.Find("Heart" + num);
+            heart.SetActive(false);
+        }
     }
 
     private void Die()
