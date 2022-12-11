@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 268284505170960246}
   - component: {fileID: 268284505170960247}
   - component: {fileID: 268284505170960244}
+  - component: {fileID: -4793329305810214566}
   m_Layer: 0
   m_Name: EvilWizard
   m_TagString: Enemy
@@ -134,6 +135,7 @@ MonoBehaviour:
   missileSpeed: 5
   attackSpeed: 2
   plateObject: {fileID: 4246183644107824270, guid: d0e35f12bd9b83e45943591f5c6038eb, type: 3}
+  player: {fileID: 0}
 --- !u!95 &268284505170960247
 Animator:
   serializedVersion: 4
@@ -167,3 +169,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.005
+--- !u!50 &-4793329305810214566
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268284505170960253}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

@@ -53,5 +53,10 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene(4);
     }
 
+    public static void LoseGame()
+    {
+        SceneManager.LoadScene(3);
+    }
+
 
 }

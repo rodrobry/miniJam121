@@ -10,7 +10,7 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnEnemy", 0, 6);
+        InvokeRepeating("SpawnEnemy", 0, 7);
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        if(enemyCount > 23)
+        if(enemyCount > 10)
         {
             Invoke("WinGame", 25f);
             return;
