@@ -48,5 +48,10 @@ public class SceneController : MonoBehaviour
         }
     }
 
+    public static void WinGame()
+    {
+        SceneManager.LoadScene(4);
+    }
+
 
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemy;
+    private int enemyCount = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,17 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
+        if(enemyCount > 23)
+        {
+            Invoke("WinGame", 25f);
+            return;
+        }
         var plate = Object.Instantiate(enemy, transform.position, Quaternion.identity);
+        enemyCount++;
+    }
+
+    private void WinGame()
+    {
+        SceneController.WinGame();
     }
 }
