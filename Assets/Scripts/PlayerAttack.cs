@@ -6,11 +6,14 @@ public class PlayerAttack : MonoBehaviour
 {
     private int plateAmmu = 0;
     public float plateSpeed = 7.5f;
+    public float attackCooldown = 0.4f;
+    private float lastAttack;
     public GameObject plateObject;
 
     // Start is called before the first frame update
     void Start()
     {
+        lastAttack = Time.time;
         for (int i = 1; i < 6; i++)
         {
             var plate = GameObject.Find("Plate" + i);
@@ -22,7 +25,8 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && plateAmmu > 0)
+        var attackOnCd = Time.time - lastAttack < attackCooldown;
+        if (Input.GetMouseButtonDown(0) && plateAmmu > 0 && !attackOnCd)
         {
             Attack();
         }
@@ -46,6 +50,7 @@ public class PlayerAttack : MonoBehaviour
         var plateRb = plate.GetComponent<Rigidbody2D>();
         plateRb.AddForce(targetDirection * plateSpeed, ForceMode2D.Impulse);
 
+        lastAttack = Time.time;
         plateAmmu--;
         UpdatePlateUI(false);
     }

@@ -8621,6 +8621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plateSpeed: 5
+  attackCooldown: 0.4
   plateObject: {fileID: 2382293253141506326, guid: 1984591e64d47da4a91a14590bbd0a74, type: 3}
 --- !u!114 &1447906666
 MonoBehaviour:
