@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 52809464}
   - component: {fileID: 52809463}
   m_Layer: 5
-  m_Name: Heart (1)
+  m_Name: Heart2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 153639125}
   - component: {fileID: 153639124}
   m_Layer: 5
-  m_Name: Plate (1)
+  m_Name: Plate2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -822,7 +822,7 @@ GameObject:
   - component: {fileID: 988157971}
   - component: {fileID: 988157970}
   m_Layer: 5
-  m_Name: Heart
+  m_Name: Heart1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -898,7 +898,7 @@ GameObject:
   - component: {fileID: 1035923581}
   - component: {fileID: 1035923580}
   m_Layer: 5
-  m_Name: Plate (4)
+  m_Name: Plate5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1046,7 +1046,7 @@ GameObject:
   - component: {fileID: 1113396899}
   - component: {fileID: 1113396898}
   m_Layer: 5
-  m_Name: Plate (3)
+  m_Name: Plate4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1122,7 +1122,7 @@ GameObject:
   - component: {fileID: 1138705584}
   - component: {fileID: 1138705583}
   m_Layer: 5
-  m_Name: Plate
+  m_Name: Plate1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7887,7 +7887,7 @@ GameObject:
   - component: {fileID: 1216406018}
   - component: {fileID: 1216406017}
   m_Layer: 5
-  m_Name: Heart (2)
+  m_Name: Heart3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8620,7 +8620,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e416f68723ddb6348a2c4294ca945c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plateAmo: 0
   plateSpeed: 5
   plateObject: {fileID: 2382293253141506326, guid: 1984591e64d47da4a91a14590bbd0a74, type: 3}
 --- !u!114 &1447906666
@@ -8934,6 +8933,37 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!1 &1645385327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1645385328}
+  m_Layer: 0
+  m_Name: PlateChest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1645385328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645385327}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -522.04, y: -301.27, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2053893220}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1711206245
 GameObject:
   m_ObjectHideFlags: 0
@@ -10073,7 +10103,7 @@ GameObject:
   - component: {fileID: 1965720289}
   - component: {fileID: 1965720288}
   m_Layer: 5
-  m_Name: Plate (2)
+  m_Name: Plate3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10257,6 +10287,7 @@ Transform:
   - {fileID: 1711206246}
   - {fileID: 1102187329}
   - {fileID: 1199523138}
+  - {fileID: 1645385328}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
