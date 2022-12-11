@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    public float missileSpeed = 7.5f;
+    public float missileSpeed = 7f;
+    public float attackSpeed = 2f;
     public GameObject plateObject;
     private Animator animator;
 
@@ -12,7 +13,7 @@ public class EnemyAttack : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        InvokeRepeating("Attack", 1, 1);
+        InvokeRepeating("Attack", 2f, attackSpeed);
     }
 
     // Update is called once per frame

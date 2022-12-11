@@ -131,7 +131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 350d570f20637044ea966d9e4d50bd76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missileSpeed: 7.5
+  missileSpeed: 5
+  attackSpeed: 2
   plateObject: {fileID: 4246183644107824270, guid: d0e35f12bd9b83e45943591f5c6038eb, type: 3}
 --- !u!95 &268284505170960247
 Animator:
@@ -165,4 +166,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd9bbc0efd6ea5b4da0370b824a37a68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.01
+  moveSpeed: 0.005

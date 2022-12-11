@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyMovment : MonoBehaviour
 {
     private GameObject door;
-    public float moveSpeed = 1f;
+    public float moveSpeed = 0.005f;
 
     // Start is called before the first frame update
     void Start()
