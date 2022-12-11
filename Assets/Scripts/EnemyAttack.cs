@@ -6,10 +6,12 @@ public class EnemyAttack : MonoBehaviour
 {
     public float missileSpeed = 7.5f;
     public GameObject plateObject;
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
         InvokeRepeating("Attack", 1, 1);
     }
 
@@ -20,6 +22,18 @@ public class EnemyAttack : MonoBehaviour
     }
 
     private void Attack()
+    {
+        animator.Play("MageAttack");
+        Invoke("Fire", 0.1f);
+        Invoke("ResetAnim", 0.3f);
+    }
+
+    private void ResetAnim()
+    {
+        animator.Play("MageIdle");
+    }
+
+    private void Fire()
     {
         //Give rotation matching player position
         Vector2 enemyPos = transform.position;
